@@ -1,9 +1,9 @@
 import React from 'react'
-
-function Logo({src = "default.png"  , className, alt = "testImg", ...restProps }) {
+import LogoImage from '../../assets/Logo.jpeg'
+function Logo({  className, alt = "testImg", ...restProps }) {
   return (
 
-    <img src={src} className={className}  alt={alt} {...restProps} loading={"lazy"} />
+    <img src={LogoImage} className={className}  alt={alt} {...restProps} loading={"lazy"} />
     
   )
 }
