@@ -46,7 +46,7 @@ function Header({ FilterBySearch = '', showmodal = false, setShowModal = '', set
 
     <header className="bg-main text-white flex justify-between items-center p-4 max-md:flex-col">
       <div className="flex items-center ">
-        <Logo src='\src\assets\Logo.jpeg' alt="headerlogo" className=" w-10 h-10 mr-2" />
+        <Logo  alt="headerlogo" className=" w-10 h-10 mr-2" />
         <h1 className="text-2xl text-star">CTLIX</h1>
       </div>
       <nav className="flex items-center justify-between  text-star w-[60%] max-md:flex-col">
