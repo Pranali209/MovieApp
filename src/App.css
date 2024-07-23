@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drop-shadow {
+    box-shadow: 0px 5px 5px rgba(16, 16, 16, 0.2); /* Adjust shadow offset and blur */
+  }
+
+  .movie-info {
+    position: absolute;
+    bottom: 0;
+   
+    left: 0;
+    width: 100%;
+    height: 60%; /* Adjust height if needed */
+    display: flex; /* Center content vertically */
+    align-items: flex-end; /* Align content to bottom */
+    padding: 5px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  }
+
+  .radioBtn{
+  
+      clip: rect(0 0 0 0);
+      clip-path: inset(100%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    
+  }
+  .NavigationBar{
+   
+     
+      transition: background-color .5s ease;
+    
+  }
+
+  .radioBtn:checked + .NavigationBar {
+    box-shadow: 0 0 0 0.0625em #000102;
+    background-color: #FFB000;
+    z-index: 1;
+    color: #f4f6f8;
+  }
+.truncate {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 20ch;
+}
