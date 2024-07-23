@@ -44,9 +44,6 @@ function Home() {
             }
         }
         DataFetching()
-        setInterval(() => {
-            const data = fetch(`http://www.omdbapi.com/?apikey=${apikey}&s=movies`)
-        }, 10000);
     }, [])
 
     async function FilterBySearch(value) {
